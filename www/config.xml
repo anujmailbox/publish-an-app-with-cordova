@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id              ="com.tutsplus.agentassist" 
+        version         ="0.0.1" 
+        xmlns           ="http://www.w3.org/ns/widgets" 
+        xmlns:gap       ="http://phonegap.com/ns/1.0" 
+        xmlns:android   = "http://schemas.android.com/apk/res/android">
+    
+    <name>agentAssist</name>
+    <description>
+        An app to assist the mobile insurance claims agent
+    </description>
+    <author email="admin@agentassist" href="http://agentassist.com">
+        Agent assist
+    </author>
+    
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    
+    <preference name="orientation" value="portrait" />
+    
+    
+    <gap:config-file platform="android" parent="/manifest" mode="merge">
+    <supports-screens 
+        android:xlargeScreens="false" />
+    </gap:config-file>
+    
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
+    
+    
+    <gap:plugin name="cordova-plugin-camera" source="npm" />
+    <gap:plugin name="cordova-plugin-contacts" source="npm" />
+    <gap:plugin name="cordova-plugin-dialogs" source="npm" />
+    <gap:plugin name="cordova-plugin-directions" source="npm" />
+    <gap:plugin name="cordova-plugin-network-information" source="npm" />
+    
+    <access origin="*" />
+    
+</widget>
